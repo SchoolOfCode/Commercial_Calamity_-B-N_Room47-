@@ -11,6 +11,11 @@ export function checkDuplicates(arr) {
   } else return false;
 }
 
+export function numberOfDupes(arr) {
+    const newArr = [...new Set(arr)];
+    return arr.length - newArr.length
+}
+
 // function removeDuplicates(arr) {
 //     return [...new Set(arr)];
 // }
